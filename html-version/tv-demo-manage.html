@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>TV Demo Manage Page</title>
+    <link rel="stylesheet" type="text/css" href="/Users/bryanhague/projects/tv-demo-front-end/html-version/tv-demo-style.css">
+
+</head>
+<body>
+<header>
+    <nav>
+        <div class="box-1">
+
+            <h2 class="current">MANAGE</h2>
+
+        </div>
+        <div class="box-2">
+            <a href="/Users/bryanhague/projects/tv-demo-front-end/html-version/tv-demo-preview.html">
+                <h2>PREVIEW</h2>
+            </a>
+        </div>
+    </nav>
+</header>
+
+
+    <script>
+
+        const clickedCreateUpdate = function () {
+            console.log("createupdate")
+        }
+        const clickedDelete = function () {
+            console.log("delete")
+        }
+        const clickedShowSelection = function () {
+            console.log("showselect")
+        }
+       
+        
+
+
+
+
+    </script>
+
+    <div class="container-2">
+        <div class="box-3">
+            <h3>SHOWS</h3>
+            <span>
+                <button onclick="clickedShowSelection()">Titans</button><button onclick="clickedDelete()" class="delete-button">-</button><br></span>
+            <span>
+                <button onclick="clickedShowSelection()">Doom Patrol</button><button  onclick="clickedDelete()" class="delete-button">-</button><br></span>
+        </div>
+        <div class="box-4">
+            <h3>New/Edit Show</h3>
+            <form>
+                <span>
+                    Name:<br>
+                    Rating:<br>
+                    Image Url:<br>
+                </span>
+                <div>
+                    <input type="text" name="name"><br>
+                    <input type="text" name="rating"><br>
+                    <input type="text" name="image-url"><br>
+                    <button onclick="clickedCreateUpdate()" type="submit">Create/Update</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
