@@ -11,6 +11,11 @@ class ManagePage extends Component {
         console.log("tvShowDeleted")
     }
 
+    saveTVShow = (e) => {
+        e.preventDefault()
+        console.log("saveTVShow")
+    }
+
     render = () => {
         return (
             <div>
@@ -31,7 +36,7 @@ class ManagePage extends Component {
                             <div>Name:<input type="text" name="name" /></div>
                             <div>Rating:<input type="text" name="rating" /></div>
                             <div>Image Url:<input type="text" name="image-url" /></div>
-                            <button type="submit">Create/Update</button>
+                            <button type="submit" onClick={this.saveTVShow}>Create/Update</button>
                         </form>
                     </div>
                 </div>
