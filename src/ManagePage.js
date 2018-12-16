@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './MyCss.css'
 import Nav from './Nav'
+import TVShow from './TVShow'
 
 class ManagePage extends Component {
     render = () => {
@@ -13,17 +14,16 @@ class ManagePage extends Component {
                 <div className="container-2">
                     <div className="box-3">
                         <h3>SHOWS</h3>
-                        <span>
-                            <button>Titans</button><button className="delete-button">-</button><br /></span>
-                        <span>
-                            <button>Doom Patrol</button><button className="delete-button">-</button><br /></span>
+                        <TVShow name="Titans" allowDelete={true} />
+                        <TVShow name="Doom Patrol" allowDelete={true} />
+                        
                     </div>
                     <div className="box-4">
                         <h3>New/Edit Show</h3>
                         <form>
-                            Name:<input type="text" name="name" />
-                            Rating:<input type="text" name="rating" />
-                            Image Url:<input type="text" name="image-url" />
+                            <div>Name:<input type="text" name="name" /></div>
+                            <div>Rating:<input type="text" name="rating" /></div>
+                            <div>Image Url:<input type="text" name="image-url" /></div>
                             <button type="submit">Create/Update</button>
                         </form>
                     </div>

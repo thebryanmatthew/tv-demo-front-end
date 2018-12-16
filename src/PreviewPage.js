@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './MyCss.css'
 import Nav from './Nav'
+import TVShow from './TVShow'
 
 class PreviewPage extends Component {
     render = () => {
