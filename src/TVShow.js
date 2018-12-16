@@ -5,15 +5,15 @@ class TVShow extends Component {
     renderDelete = () => {
         if (this.props.allowDelete) {
             return (
-                <button className="delete-button">-</button>)
+                <button onClick={this.props.deleteHandler} className="delete-button">-</button>)
         }
     }
-    render() {
+    render = () => {
         return (
             
-                <span><button>{this.props.name}</button>
+                <span><button onClick={this.props.selectHandler}>{this.props.name}</button>
                 {this.renderDelete()}
-                </span>
+            </span>
         )
     }
 }

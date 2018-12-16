@@ -4,6 +4,13 @@ import Nav from './Nav'
 import TVShow from './TVShow'
 
 class ManagePage extends Component {
+    tvShowSelected = () => {
+        console.log("tvShowSelected")
+    }
+    tvShowDeleted = () => {
+        console.log("tvShowDeleted")
+    }
+
     render = () => {
         return (
             <div>
@@ -14,9 +21,9 @@ class ManagePage extends Component {
                 <div className="container-2">
                     <div className="box-3">
                         <h3>SHOWS</h3>
-                        <TVShow name="Titans" allowDelete={true} />
-                        <TVShow name="Doom Patrol" allowDelete={true} />
-                        
+                        <TVShow name="Titans" allowDelete={true} selectHandler={this.tvShowSelected} deleteHandler={this.tvShowDeleted}/>
+                        <TVShow name="Doom Patrol" allowDelete={true} selectHandler={this.tvShowSelected} deleteHandler={this.tvShowDeleted}/>
+
                     </div>
                     <div className="box-4">
                         <h3>New/Edit Show</h3>
