@@ -26,7 +26,7 @@ class PreviewPage extends Component {
 
                         </div>
                         <div className="show-image">
-                            <img src="https://pbs.twimg.com/media/DoHceqzWsAAdwJf.jpg" height="570px" width="386x" />
+                            <img src="https://pbs.twimg.com/media/DoHceqzWsAAdwJf.jpg" alt="" height="570px" width="386x" />
                         </div>
                     </div>
 
