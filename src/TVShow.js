@@ -1,7 +1,15 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
 
 
 class TVShow extends Component {
+    static propTypes = {
+        name: PropTypes.string.isRequired,
+        allowDelete: PropTypes.bool,
+        selectHandler: PropTypes.func.isRequired,
+        deleteHandler: PropTypes.func,
+    }
     renderDelete = () => {
         if (this.props.allowDelete) {
             return (
@@ -10,8 +18,8 @@ class TVShow extends Component {
     }
     render = () => {
         return (
-            
-                <span><button onClick={this.props.selectHandler}>{this.props.name}</button>
+
+            <span><button onClick={this.props.selectHandler}>{this.props.name}</button>
                 {this.renderDelete()}
             </span>
         )
